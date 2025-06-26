@@ -1,0 +1,166 @@
+body {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pikachu {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+/* Ears */
+.ear {
+  width: 30px;
+  height: 80px;
+  background: #fdd835;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 0;
+}
+.ear.left {
+  left: 10px;
+  transform: rotate(-15deg);
+  background: linear-gradient(#000 0 25%, #fdd835 25% 100%);
+}
+.ear.right {
+  right: 10px;
+  transform: rotate(15deg);
+  background: linear-gradient(#000 0 25%, #fdd835 25% 100%);
+}
+
+/* Head */
+.head {
+  width: 160px;
+  height: 140px;
+  background: #fdd835;
+  border-radius: 80px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+/* Eyes */
+.eye {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+}
+.eye::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.eye.left {
+  left: 30px;
+}
+.eye.right {
+  right: 30px;
+}
+
+/* Cheeks */
+.cheek {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+}
+.cheek.left {
+  left: 15px;
+}
+.cheek.right {
+  right: 15px;
+}
+
+/* Nose */
+.nose {
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+  left: 76px;
+}
+
+/* Mouth */
+.mouth {
+  width: 40px;
+  height: 20px;
+  border-bottom: 3px solid #000;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Body */
+.body {
+  width: 120px;
+  height: 120px;
+  background: #fdd835;
+  border-radius: 60px;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+}
+
+/* Arms */
+.arm {
+  width: 25px;
+  height: 60px;
+  background: #fdd835;
+  position: absolute;
+  top: 180px;
+  border-radius: 20px;
+}
+.arm.left {
+  left: 0;
+  transform: rotate(20deg);
+}
+.arm.right {
+  right: 0;
+  transform: rotate(-20deg);
+}
+
+/* Legs */
+.leg {
+  width: 25px;
+  height: 40px;
+  background: #fdd835;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+}
+.leg.left {
+  left: 50px;
+}
+.leg.right {
+  right: 50px;
+}
+
+/* Tail */
+.tail {
+  width: 20px;
+  height: 100px;
+  background: #fdd835;
+  position: absolute;
+  top: 150px;
+  left: -30px;
+  transform: rotate(-30deg);
+  clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%, 20% 50%);
+  box-shadow: inset 0 0 0 4px #fbc02d;
+}
